@@ -1,0 +1,3 @@
+allowed_registries:
+  - quay.io
+  - mcr.microsoft.com

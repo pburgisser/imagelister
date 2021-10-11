@@ -1,0 +1,25 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+      <table border="1">
+         <tr >
+             <th >Namespace</th>
+             <th >Name</th>
+             <th>Image</th>
+             <th>Parent</th>
+             <th>Is Allowed</th>
+             {% for image in images: %}
+             <tr>
+               <td>{{ image.namespace }}</td>
+               <td>{{ image.name }}</td>
+               <td>{{ image.image }}</td>
+               <td>{{ image.parent }}</td>
+               <td>{{ image.is_allowed }}</td>
+             </tr>
+             {% endfor %}
+         </tr>
+      </table>
+    </body>
+</html>
